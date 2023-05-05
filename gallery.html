@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gallery</title>
+	<style>
+		body {
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+			font-size: 16px;
+			line-height: 1.6;
+		}
+		nav {
+			background-color: #f2f2f2;
+			padding: 10px;
+			text-align: center;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			z-index: 1;
+		}
+		
+		nav a {
+			color: #333;
+			display: inline-block;
+			margin: 0 10px;
+			text-decoration: none;
+			font-size: 1.2rem;
+			transition: color 0.2s;
+			padding: 10px;
+			border-radius: 5px;
+		}
+		
+		nav a:hover {
+			color: #fff;
+			background-color: #333;
+		}
+
+            h1 {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+                  margin-top: 50px; /* Add margin to create space above heading */
+		}           
+		.gallery {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+			grid-gap: 20px;
+			padding: 20px;
+			justify-items: center;
+			align-items: center;
+		}
+		.gallery-item {
+			overflow: hidden;
+			border-radius: 5px;
+			box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+		}
+		.gallery-item img {
+			display: block;
+			width: 100%;
+			height: auto;
+			transition: transform 0.2s ease-in-out;
+		}
+		.gallery-item:hover img {
+			transform: scale(1.1);
+		}
+		.gallery-item-title {
+			text-align: center;
+			margin-top: 10px;
+			font-weight: bold;
+			color: #333;
+		}
+
+        .audio-player {
+            margin: 10px;
+            text-align: center;
+        }
+        .audio-player audio {
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+      
+        
+	</style>
+</head>
+<body>
+	<nav>
+		<a href="home.html">Home</a>
+		<a href="social.html">Social</a>
+		<a href="biography.html">Biography</a>
+		<a href="resume.html">Resume</a>
+		<a href="timetable.html">Time Table</a>
+		<a href="gallery.html">Gallery</a>
+		<a href="download.html">Download</a>
+		<a href="links.html">Links</a>
+		<a href="login.html">Login</a>
+		<a href="logout.html">Logout</a>
+	</nav>
+
+      <h1>My Gallery</h1>
+
+	<div class="gallery">
+		<div class="gallery-item">
+			<img src="pic1.jpg" alt="Image 1">
+			<div class="gallery-item-title">Image 1</div>
+		</div>
+		<div class="gallery-item">
+			<img src="pic2.jpg" alt="Image 2">
+			<div class="gallery-item-title">Image 2</div>
+		</div>
+		<div class="gallery-item">
+			<img src="pic3.jpg" alt="Image 3">
+			<div class="gallery-item-title">Image 3</div>
+		</div>
+		<div class="gallery-item">
+			<img src="pic4.jpg" alt="Image 4">
+			<div class="gallery-item-title">Image 4</div>
+		</div>
+		<div class="gallery-item">
+			<img src="pic5.jpg" alt="Image 5">
+			<div class="gallery-item-title">Image 5</div>
+		</div>
+		<div class="gallery-item">
+			<img src="pic6.jpg" alt="Image 6">
+			<div class="gallery-item-title">Image 6</div>
+		</div>
+        <div class="gallery-item">
+			<img src="pic7.jpg" alt="Image 7">
+			<div class="gallery-item-title">Image 7</div>
+		</div>
+<div class="gallery-item">
+	<img src="pic8.png" alt="Image 8">
+	<div class="gallery-item-title">Image 8</div>
+</div>
+<div class="gallery-item">
+	<img src="pic9.jpg" alt="Image 9">
+	<div class="gallery-item-title">Image 9</div>
+</div>
+<div class="gallery-item">
+	<img src="pic10.png" alt="Image 10">
+	<div class="gallery-item-title">Image 10</div>
+</div>
+<video width="300" height="360" controls>
+	<source src="vid1.mp4" type="video/mp4">
+</video>
+<video width="300" height="360" controls>
+	<source src="vid2.mp4" type="video/mp4">
+</video>
+<video width="300" height="360" controls>
+	<source src="vid3.mp4" type="video/mp4">
+</video>
+<video width="300" height="360" controls>
+	<source src="vid4.mp4" type="video/mp4">
+</video>
+<video width="300" height="360" controls>
+	<source src="vid5.mp4" type="video/mp4">
+</video>
+<audio controls>
+	<source src="song1.mp3" type="audio/mp3">
+</audio>
+<audio controls>
+	<source src="song2.mp3" type="audio/mp3">
+</audio>
+<audio controls>
+	<source src="song3.mp3" type="audio/mp3">
+</audio>
+<audio controls>
+	<source src="song4.mp3" type="audio/mp3">
+</audio>
+<audio controls>
+	<source src="song5.mp3" type="audio/mp3">
+</audio>
